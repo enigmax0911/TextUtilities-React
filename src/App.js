@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
 import React, {useCallback, useState} from 'react'
-import About from './components/About';
+// import About from './components/About';
 import {
   BrowserRouter as Router,
   Routes,
@@ -63,7 +63,7 @@ function App() {
                 <About about="About Us" mode={mode} togglemode={togglemode} />
                 </Route> */}
                   <Route path="/" element={<Textform heading="Enter Text below to analyze" mode={mode} showalert={showalert} />} />
-                  <Route path="/About" element={<About about="About Us" mode={mode} togglemode={togglemode} />} />
+                  // <Route path="/About" element={<About about="About Us" mode={mode} togglemode={togglemode} />} />
           </Routes>
         </div>
         </Router>
